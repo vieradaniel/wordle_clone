@@ -3,7 +3,7 @@ import './Line.css'
 
 export const Line = ({guess, isFinal, solution}) => {
 
-  //console.log(guess);
+  
   
   const WORD_LENGTH = 5;
   const tiles =[];
@@ -13,7 +13,7 @@ export const Line = ({guess, isFinal, solution}) => {
     let className = 'tile';
     
     if (isFinal){
-      console.log(guess[i]);
+      
       if(char === solution[i]){
         className += ' correct';
       }else if (solution.includes(char)){
